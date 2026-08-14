@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>ICT Project Page 1 </title>
+        <style>
+            #container{
+                font-family:arial;
+                margin:10px;
+                padding:10px;
+                
+            }
+            body{
+                background-color:fafaef;
+            }
+            input, select{
+                width:50%;
+                padding:10px;
+                margin:10px 0;
+                border-radius:100px;
+                border:0px;
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Selamat datang di Ekstrakurikuler Informatika</h1>
+            <img src="https://i.imgur.com/uAzwSFf.png" alt="Logo Informatika" width="200px">
+            <p>Belajar coding itu seru! Di sini kita akan membuat web kreatif bersama-sama.</p>
+            <h2>Jadwal Kegiatan</h2>
+            <table>
+                <tr>
+                    <th>Hari</th>
+                    <th>Kegiatan</th>
+                </tr>
+                <tr>
+                    <td>Senin</td>
+                    <td>Dasar HTML</td>
+                </tr>
+                <tr>
+                    <td>Rabu</td>
+                    <td>Tabel dan form
+                    </td>
+                </tr>
+            </table>
+            <button id="joinButton">Ingin Bergabung? Kilk di sini untuk mendaftar!</button>
+        </div>
+        <div>
+            <script>
+                var joinClicked = function(){
+                    window.location.href = "ICTprojectPG2.html"
+                }
+                document.getElementById("joinButton").addEventListener("click", joinClicked)
+            </script>
+        </div>
+    </body>
+</html>
